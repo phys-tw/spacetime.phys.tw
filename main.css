@@ -5,3 +5,8 @@ html, body, #result {
 #result {
 	border: none;
 }
+
+body {
+	display: -webkit-flex;
+	display: flex;
+}
