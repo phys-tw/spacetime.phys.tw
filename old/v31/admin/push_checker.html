@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>時空編輯推文檢查器</title>
+  </head>
+  
+  <script>
+  function check(){
+
+    var text = document.getElementById('box').value;
+    var pushlist = new Array();
+    pushlist = text.split("\n");
+    var namelist = new Array('revolute', 'windking', 'cirro', 'shycolor', 'lateas', 'starshiping', 'Allen', 'Gadi', 'meteor53', 'anakin8120', 'peggyhuang', 'hkazami', 'ppia', 'bbsealion', 'clark78118', 'jiang696', 'kepler1571', 'ws6302', 'carol');
+    var flag;
+    var output = '沒推文名單：\n';
+    
+    for(i=0;i<19;i++){
+        flag = true;
+        for(j=0;j<pushlist.length;j++){
+            if(pushlist[j].search(namelist[i])==4){
+                flag = false;
+                break;
+            }
+        }
+        if(flag) output = output + namelist[i] + '\n'; 
+    }
+    document.getElementById('box').value = output;
+  }
+
+  </script>
+  
+  <body>
+  <input type="button" value="按我檢查" onclick="check();"><br><br>
+  <textarea id="box" name="box" cols="80" rows="20">請先複製推文於此處貼上</textarea>
+  </body>
+  
+</html>
