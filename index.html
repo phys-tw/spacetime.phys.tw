@@ -17,12 +17,12 @@
   	<body>
   	<nav class="navbar navbar-inverse navbar-fixed-top">
     		<div class="navbar-header">
-    			<a class="navbar-brand">台大物理系系刊《時空》</a>
-    			
+    			<a class="navbar-brand">台大物理系系刊《時空》</a>    			
     		</div>
 
     		<div class="navbar-right">
     			<ul class="nav navbar-nav">
+    			  <li><a href="https://web.phys.ntu.edu.tw/physhistory/spacetime/">台大物理系系刊網站連結</a></li>
 			      <li><a href="http://www.phys.ntu.edu.tw/">回台大物理</a></li>
 			      <li><a href="http://www.phys.tw/">phys.tw</a></li>
 			      <li class="dropdown">
@@ -79,7 +79,9 @@
       /* handling the hash, and dispatch the route to $("#result") */
       function hashHandler() {
         $("#result").attr('src', "vol_" + window.location.hash.slice(1) + "/index.html");
+        alert("自2020年1月起系刊《時空》統一由台大物理系（非系學會）管理。\n您可以點擊畫面右上角的「台大物理系系刊網站連結」進入。\n \n繼續瀏覽本網站請按確定");
       }
+
       /* listening on hash change */
       window.onhashchange = function() {hashHandler()};
       if (window.location.hash == "" || window.location.hash == "#") {
@@ -88,6 +90,7 @@
         hashHandler();
       }
     });
+    
   </script>
   </body>
 </html>
