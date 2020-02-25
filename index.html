@@ -22,7 +22,107 @@
 
     		<div class="navbar-right">
     			<ul class="nav navbar-nav">
-    			  <li><a href="https://web.phys.ntu.edu.tw/physhistory/spacetime/">台大物理系系刊網站連結</a></li>
+    			  <!-- <li><a href="https://web.phys.ntu.edu.tw/physhistory/spacetime/">台大物理系系刊網站連結</a></li> -->
+			      <li><a href="http://www.phys.ntu.edu.tw/">回台大物理</a></li>
+			      <li><a href="http://www.phys.tw/">phys.tw</a></li>
+			      <li class="dropdown">
+	                  <a class="dropdown-toggle" data-toggle="dropdown">Volume<span class="caret"></span></a>
+	                  <ul class="dropdown-menu" role="menu">
+	                      <li><a href="#01">01</a></li>
+					      <li><a href="#02">02</a></li>
+					      <li><a href="#03">03</a></li>
+					      <li><a href="#04">04</a></li>
+					      <li><a href="#05">05</a></li>
+					      <li><a href="#06">06</a></li>
+					      <li><a href="#07">07</a></li>
+					      <li><a href="#08">08</a></li>
+					      <li><a href="#09">09</a></li>
+					      <li><a href="#10">10</a></li>
+					      <li><a href="#11">11</a></li>
+					      <li><a href="#12">12</a></li>
+					      <li><a href="#13">13</a></li>
+					      <li><a href="#14">14</a></li>
+					      <li><a href="#15">15</a></li>
+					      <li><a href="#16">16</a></li>
+					      <li><a href="#17">17</a></li>
+					      <li><a href="#18">18</a></li>
+					      <li><a href="#19">19</a></li>
+					      <li><a href="#20">20</a></li>
+					      <li><a href="#21">21</a></li>
+					      <li><a href="#22">22</a></li>
+					      <li><a href="#23">23</a></li>
+					      <li><a href="#24">24</a></li>
+					      <li><a href="#25">25</a></li>
+					      <li><a href="#26">26</a></li>
+					      <li><a href="#27">27</a></li>
+					      <li><a href="#28">28</a></li>
+					      <li><a href="#29">29</a></li>
+					      <li><a href="#30">30</a></li>
+					      <li><a href="#31">31</a></li>
+					      <li><a href="#32">32</a></li>
+					      <li><a href="#33">33</a></li>
+					      <li><a href="#34">34</a></li>
+					      <li><a href="#35">35</a></li>
+					      <li><a href="#36">36</a></li>
+	    				</ul>
+    				</li>
+				</ul>
+    		</div>
+   </nav>
+  	
+  	
+  	<iframe id="result"></iframe>
+  <script src="js/vendor/jquery.min.js"></script>
+  <script src="js/vendor/html5shiv.js"></script>
+  <script src="js/vendor/respond.min.js"></script>
+  <script src="js/flat-ui.min.js"></script>
+  <script>
+    $(function(){
+      /* handling the hash, and dispatch the route to $("#result") */
+      /*
+      function hashHandler() {
+        $("#result").attr('src', "vol_" + window.location.hash.slice(1) + "/index.html");
+        alert("系刊《時空》亦可以在台大物理系官方網站（非系學會）閱讀。\n您可以點擊畫面右上角的「台大物理系系刊網站連結」進入。\n \n繼續瀏覽本網站請按確定");
+      }
+      */
+
+      /* listening on hash change */
+      window.onhashchange = function() {hashHandler()};
+      if (window.location.hash == "" || window.location.hash == "#") {
+        window.location.hash = "#36";
+      } else {
+        hashHandler();
+      }
+    });
+    
+  </script>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="zh-tw">
+	<head>
+		<meta charset="utf-8">
+		<title>台大物理系系刊《時空》</title>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="css/vendor/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/flat-ui.min.css" />
+		<style>
+			.dropdown-menu {
+				max-height: 300px;
+				overflow-y: scroll;
+			}
+		</style>
+	</head>
+  	<body>
+  	<nav class="navbar navbar-inverse navbar-fixed-top">
+    		<div class="navbar-header">
+    			<a class="navbar-brand">台大物理系系刊《時空》</a>    			
+    		</div>
+
+    		<div class="navbar-right">
+    			<ul class="nav navbar-nav">
+    			  <-- <li><a href="https://web.phys.ntu.edu.tw/physhistory/spacetime/">台大物理系系刊網站連結</a></li> -->
 			      <li><a href="http://www.phys.ntu.edu.tw/">回台大物理</a></li>
 			      <li><a href="http://www.phys.tw/">phys.tw</a></li>
 			      <li class="dropdown">
