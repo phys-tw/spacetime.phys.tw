@@ -1,0 +1,82 @@
+html{height: 100%;}
+
+body
+{ font-family: arial, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  font-size: 0.8em;
+}
+
+h1
+{ font-size: 150%;
+  text-align: center;
+  padding: 8px 0px 0px 0px;
+}
+
+table
+{ border: 0px;
+}
+
+td
+{ border: 0px;
+  font-family: arial, sans-serif;
+  font-size: .8em;
+}
+
+td.title{
+  width: 292px;
+  padding: 3px 0px 3px 8px;
+}
+
+td.subtitle{
+  width: 315px;
+  padding: 3px 5px 3px 40px;
+}
+
+td.author{
+  width: 90px;
+  padding: 3px 0px 3px 0px;
+}
+
+td.page{
+  width: 20px;
+  padding: 2px 0px 2px 0px;
+}
+
+img
+{ border: 0px; 
+  margin: 0px; 
+  padding: 0px;
+}
+
+#main
+{ width: 760px;
+  margin-left: auto; 
+  margin-right: auto;
+  border: 0px;
+ * position:absolute;
+ * left:50%; 
+ * margin-left:-380px;
+}
+
+#contents
+{ width: 460px;
+  border: 0px;
+  float: left;
+}
+
+#side
+{ width: 300px;
+  border: 0px;
+  float: right;
+  text-align: center;
+}
+
+#footer
+{ width: 760px;
+  border: 0px;
+  text-align: center;
+  font-family: Times New Roman;
+  clear: both;
+  padding: 20px 0px 20px 0px;
+}
