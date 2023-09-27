@@ -44,18 +44,18 @@ td.page{
 }
 
 img
-{ border: 0px; 
-  margin: 0px; 
+{ border: 0px;
+  margin: 0px;
   padding: 0px;
 }
 
 #main
 { width: 760px;
-  margin-left: auto; 
+  margin-left: auto;
   margin-right: auto;
   border: 0px;
  * position:absolute;
- * left:50%; 
+ * left:50%;
  * margin-left:-380px;
 }
 
@@ -79,4 +79,16 @@ img
   font-family: Times New Roman;
   clear: both;
   padding: 20px 0px 20px 0px;
+}
+.cover
+{
+    margin-left: 30%;
+    width: 40%;
+    margin-bottom: 10px;
+}
+.homePageLink
+{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
 }

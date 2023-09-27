@@ -5,10 +5,12 @@
     <link rel="stylesheet" type="text/css" href="style38.css" />
     <link rel="stylesheet" href="../css/vendor/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/flat-ui.min.css" />
+    <script src="page.js"></script>
     <title>《時空》第三十八期</title>
   </head>
 
   <body>
+    <div id="all">
     <div class="page-header">
       <h1>《時空》第三十八期</h1>
     </div>
@@ -270,14 +272,14 @@
           </tr>
 
           <tr>
-            <td class="title"><a href="封面(RGB).png">封面</a></td>
+            <td class="title"><a onclick="topCover()">封面</a></td>
             <td class="author"></td>
             <td class="page"></td>
           </tr>
 
           <tr>
             <!-- <td class="title"><a href="v38-cover-1.pdf">封底</a></td> -->
-            <td class="title"><a href="封底(RGB).png">封底</a></td>
+            <td class="title"><a onclick="bottomCover()">封底</a></td>
             <td class="author"></td>
             <td class="page"></td>
           </tr>
@@ -301,6 +303,7 @@
           University.(C) All Rights Reserved.
         </p>
       </div>
+    </div>
     </div>
   </body>
 </html>
