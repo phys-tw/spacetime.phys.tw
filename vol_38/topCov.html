@@ -6,6 +6,11 @@
     <link rel="stylesheet" href="../css/vendor/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/flat-ui.min.css" />
     <script src="page.js"></script>
+    <script>
+      window.onload = function () {
+        topCover();
+      };
+    </script>
     <title>《時空》第三十八期</title>
   </head>
 
@@ -275,7 +280,7 @@
 
             <tr>
               <td class="title">
-                <a href="topCov.html" style="cursor: pointer">封面</a>
+                <a onclick="topCover()" style="cursor: pointer">封面</a>
               </td>
               <td class="author"></td>
               <td class="page"></td>
@@ -283,7 +288,7 @@
 
             <tr>
               <td class="title">
-                <a href="botCov.html" style="cursor: pointer">封底</a>
+                <a onclick="bottomCover()" style="cursor: pointer">封底</a>
               </td>
               <td class="author"></td>
               <td class="page"></td>
